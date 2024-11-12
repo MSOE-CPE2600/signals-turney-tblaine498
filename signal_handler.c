@@ -4,9 +4,11 @@
  */
 
 /**
- * Modified by:
+ * Modified by: Tyler Blaine
  * 
  * Brief summary of modifications:
+ * All that was need to stop the program from exiting from a signal,
+ * was to remove the exit() function from the handle_signal() function.
  */
 
 
@@ -20,7 +22,6 @@
  */
 void handle_signal() {
     printf("Received a signal\n");
-    exit(1);
 }
 
 int main() {
